@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+</head>
+<body bgcolor="mistyrose">
+
+<form action="s2pvalidation.html">
+<center>	
+<table frame="box" width="75%">
+	<tr>
+		<td><center> <h2> <b> Pique-nique de fin d'année </b></h2> Inscription</center></td>
+	</tr>
+</table>
+
+<br> <br> 
+
+<table frame="box" width="75%">
+<font size="4"> <b>Je m'identifie </b> </font>
+	<tr>
+		<td> <b>Nom et prénom:</b></td>
+		<td><input type="text" name="t1"></td>
+		
+		<td rowspan="4"> <img src="liste.jpg" width="200" height="200"></td>
+	</tr>
+	
+	<tr>
+		<td><b>Ma classe:</b> </td>
+		<td> <select name="classe">
+			<option>Veuillez choisir votre classe</option>
+			<option>BTS SIO SISR</option>
+			<option>BTS SIO SLAM</option>
+		</select></td>
+	</tr>
+
+	<tr>
+		<td> <b>Mon email:</b> </td>
+		<td><input type="text" name="t2"></td>
+	</tr>
+	<tr>
+		<td> <b>Mon mot de passe:</b> </td>
+		<td><input type="password" name="t3" placeholder="8 caractères minimun"></td>
+	</tr>
+</table>
+
+<br> <br>  
+
+<table frame="box" width="65%" >
+	<font size="4"> <b>J'informe </b> </font>
+	<tr>
+		<td> <b>Mes disponibilités:</b></td>
+		<td> Mardi 21 septembre<input type="checkbox" name="c1"></td>
+		<td>Mercredi 22 septembre<input type="checkbox" name="c2"></td>
+		<td>jeudi 23 septembre<input type="checkbox" name="c3"></td>
+	</tr>
+
+<tr>
+	<td><b> J'apporterai</b></td>
+	<td>Une entrée <input type="radio" name="r1"></td>
+	<td>Un plat <input type="radio" name="r2"></td>
+	<td>Un dessert <input type="radio" name="r3"></td>
+</tr>
+
+<tr>
+	<td colspan="5">Je laisse un message (facultatif) &nbsp;:</td>
+</tr>
+
+<tr>
+	<td>
+	<textarea id="message" name="message" rows="5" cols="50" placeholder="160 caractères maximum"></textarea>
+	</td>
+</tr>
+</table>
+</center>
+
+<br><br>
+
+<center>
+<input type="submit" name="b1" value="Je m'incris"> &nbsp;
+<input type="reset" name="b2" value="Je réinitialise le formulaire">
+</center>
+
+</form>
+
+</body>
+</html>

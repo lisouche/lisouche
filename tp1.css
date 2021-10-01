@@ -1,0 +1,44 @@
+code 
+{
+	background: #73bcec;
+	color: white;
+	font-size: 2rem;
+	font-family: verdana;
+	border: 2px solid #060bfa;
+	display: block; /* faire toute la largueur */
+	margin: 0 0% 24px 0%; /* changer l'espace entre la bordure et le texte */
+	text-align: center; /* mettre le texte au milieu*/
+
+}
+
+section
+{
+	width: 30%;
+	height: 400px;
+	border: 2px solid #060bfa;
+	 float: left; /* si on commence par la droite ou la gauche */
+	border-radius: 6px; /* arrondire les bordure des sections */
+	margin: 12px 1.5% 24px 1.5%; /* definir l'espace entre des sections */
+	}
+
+header
+{margin-top: 1em;
+	margin-bottom: 1em;}
+a 
+{font-size: 20px;}
+
+footer
+{clear: both; /* enlever le float*/}
+
+.c1
+{color: mediumpurple;} 
+
+.fond1
+{background: lightyellow;}
+
+.fond2
+{background: lightpink;}
+
+p
+{text-align: justify;}
+
