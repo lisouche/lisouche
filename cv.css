@@ -27,8 +27,9 @@ box-shadow: 2px 4px 3px black;
 .entete
 {border: 2px solid blueviolet;
 height: 250px;
-border-radius: 5px;
-
+border-radius: 4px;
+width: 750px;
+padding: 4px;
 }
 
 .info
