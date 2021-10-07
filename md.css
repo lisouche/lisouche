@@ -1,0 +1,187 @@
+body
+{
+	font-family: verdana, calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;	
+	background-color: #CCEFEC;
+
+}
+
+
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+nav li
+{
+	list-style-type: none;
+}
+
+nav > ul > li /* grands onglet*/
+{
+	float: left;
+	position: relative;
+}
+
+.submenu
+{
+	display: none;
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+.menu-mobile
+{
+	display: none;
+}
+
+nav 
+{
+	width: 100%;
+	background-color: #FFECCE;
+}
+
+nav > ul:after /*un hack css (clearfix)*/
+{
+content: "";
+display: table;
+clear: both;
+}
+
+nav a 
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a
+{
+	padding: 20px 30px;
+	color: darkred;
+}
+
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: absolute; 
+	top: 100%;
+	left: 0px;
+	padding: 10px;
+	z-index: 100000;
+}
+
+.submenu li 
+{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a 
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #DBA7E9;
+	width: 270px;
+}
+
+.menu-html:hover
+{
+	border-top: 5px solid #E0B6E9;
+	background-color: rgba(227, 171, 242, 0.15);
+}
+
+.menu-css:hover
+{
+	border-top: 5px solid #E0B6E9;
+	background-color: rgba(227, 171, 242, 0.15);
+}
+
+.menu-js:hover
+{
+	border-top: 5px solid #E0B6E9;
+	background-color: rgba(227, 171, 242, 0.12);
+}
+
+.menu-contact:hover
+{
+	border-top: 5px solid #255721;
+	background-color: rgba(158, 230, 190, 0.6);
+} 
+
+nav > ul > li:hover a
+{ 
+	padding: 15px 30px 20px 30px;
+}
+
+.menu-html .submenu
+{
+	background-color: rgb(208, 157, 221);
+}
+
+.menu-css .submenu
+{
+	background-color: rgb(000, 160, 240);
+}
+
+.menu-js .submenu
+{
+	background-color: rgb(251, 216, 99);
+}
+
+.submenu li:hover a 
+{
+	color: #B3E2AF;
+	font-weight: bold;
+}
+
+.menu-html .submenu li:hover 
+{
+	background-color:rgb(200, 165, 75);
+}
+
+.menu-css .submenu li:hover
+{
+	background-color: rgba(208, 157, 221, 1);
+}
+
+.menu-js .submenu li:hover
+{
+	background-color: rgb(71, 17, 75);
+}
+
+
+nav input[type=checkbox]:checked ~ ul 
+{
+	display: block;
+}
+@media screen and (max-width : 680px)
+{
+	.menu-mobile{
+
+	display:block;
+	color: #FEC
+	background-color: red;
+	text-align: center;
+	padding: 12px 0;
+	}
+	nav ul{
+
+	display: none;}
+
+	nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li a, nav ul li:hover a{
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .submenu{
+		display: block;
+		position: static;
+	}
+}
