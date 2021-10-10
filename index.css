@@ -1,85 +1,196 @@
-
 body
-{background-color: peachpuff;}
+{   background-color: rgba(255, 182, 193, 0.8);
+    font-family: verdana, calibri, sans-serif;
+    margin: 20px;
+    padding: 0px;
+}
 
-nav ul 
+h3
+{text-align: center;
+padding-bottom: 17px;}
+
+nav > ul 
 {
-    list-style-type: katakana ;
-font-family: sans-serif;
-margin: 2px;
-padding: 12px;
-text-align: center;
-
+    margin: 0px 10% 0px 10%; /*haut droite bas gauche*/
+ 
 }
 
-nav li  a 
-{ float: left;
- width: 100px;
-height: 40px;
-border: 1px solid dimgrey;
-text-align: center;
-margin: 6px;
-padding: 1.7% 4px;
-border-radius: 6px;
-
+nav li  /*enleve tout les point des listes*/
+{
+    list-style-type: none;
 }
 
-nav li a
+nav /*mettre une couleur de fond au menu*/
+{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(219, 112, 147, 0.6);
+}
 
+/*GRAND ONGLETS*/
+nav > ul > li 
+{
+    float: left;
+    position: relative;
+}
+
+nav a /*enleve le soulignage*/
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+nav > ul > li > a /*modifier leurs tailles*/
+{
+    padding: 20px 30px;
+    color: darkred;
+}
+
+.site:hover 
+{
+    border-top: 5px solid #B0E0E6;
+    background-color: rgba(199, 21, 133,0.18);
+}
+
+.tp:hover
+{
+    border-top: 5px solid   #B0E0E6;
+    background-color: rgba(199, 21, 133,0.15);
+}
+
+.mission:hover
+{
+    border-top: 5px solid   #B0E0E6;
+    background-color: rgba(199, 21, 133,0.18);
+}
+
+.autres:hover
+{
+    border-top: 5px solid #E0B6E9;
+    background-color: rgba(199, 21, 133,0.18);
+}
+
+nav > ul > li:hover a /*arreter de faire sauté les GO*/
 { 
- display: block;
-text-decoration: none;
-background-color: seashell;
-color: burlywood;
-padding-bottom: 5px;
+    padding: 15px 30px 20px 30px;
 }
 
 
-nav li a:hover{
-background-color: aliceblue;
-}
 
+/*SOUS ONGLETS*/
 
-.b1
+.submenu /*les faire disparaitre a premiere vue*/
 {
+    display: none;
+}
+
+nav li:hover .submenu /*quand on passe dessus*/
+{
+    display: inline-block;
+    position: absolute; 
+    top: 100%;
+    left: 0px;
+    padding: 15px;
+    z-index: 100000;
+}
+
+.submenu li /*faire des cases pour les sous onglets */
+{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a /*modifier les sous onglets quand on passe dessus*/
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: darkred;
+    width: 270px;
+}
+
+.site .submenu /*mettre une couleur de fond au SO*/
+{
+    background-color: rgba(176, 224, 230, 0.8);
+}
+
+.tp .submenu
+{
+    background-color: rgba(176, 224, 230, 0.8);
+}
+
+.mission .submenu
+{
+    background-color: rgba(176, 224, 230, 0.8);
+}
+
+.submenu li:hover a /*ecriture quand on passe dessus*/
+{
+    color: black;
+    font-weight: bold;
+}
+
+.site .submenu li:hover /*couleur de fond quand on passe dessus*/
+{
+    background-color:rgb(135, 206, 250);
+}
+
+.tp .submenu li:hover
+{
+    background-color:rgb(135, 206, 250);
+}
+
+.mission .submenu li:hover
+{
+    background-color:rgb(135, 206, 250);
+}
+
+
+
+/*MOBILE*/
+nav input[type=checkbox] /*disparaitre le bouton du menu*/
+{
+    display: none;
+}
+
+.menu-mobile /*fait disparaite le mot menu*/
+{
+    display: none;
+}
+
+nav > ul:after /*un hack css (clearfix) ?*/
+{
+content: "";
+display: table;
+clear: both;
+}
+
+
+nav input[type=checkbox]:checked ~ ul 
+{
+    display: block;
+}
+@media screen and (max-width : 747px)
+{
+    .menu-mobile
+
+    {display:block;
+    color: #FEC
+    background-color: red;
+    text-align: center;
+    padding: 12px 0;}
+    
+    nav ul
+        {display: none;}
+
+    nav ul li, nav ul li a
+        {width: 100%;
+        text-align: center;}
    
-    color: blueviolet;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-  
+    nav ul li a, nav ul li:hover a
+        {padding: 10px 0px 10px 0px;}
+    
+    nav li:hover .submenu
+        {display: block;
+        position: static;}
+    
 }
-
-.b1:hover
-{background-color: seashell;}
-
-
-.b2
-{
-
-    color: slateblue;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-
-.b2:hover
-{
-background-color: seashell;
-}
-
-
-
-
-
-
-
-
