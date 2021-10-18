@@ -1,0 +1,82 @@
+
+p
+{
+font-family: verdana;
+margin-left: 5px;
+font-size: 13px;
+}
+
+h4
+{
+	margin-top: 3px;
+}
+
+
+.page
+{
+	width: 780px;
+	height: 1000px;
+	border: 5px solid hotpink;
+	font-size: 16px;
+	font-family: tahoma;
+	margin: auto;
+padding: 10px 6px ;
+border-radius: 10px ;
+box-shadow: 2px 4px 3px black;
+}
+
+.entete
+{border: 2px solid blueviolet;
+height: 250px;
+border-radius: 4px;
+width: 750px;
+padding: 4px;
+
+}
+
+.info
+{
+	float: left;
+	border: 2px ;
+	width: 200px;
+	height: 150px;
+	margin-left: 6px;
+	border-radius: 5px;
+
+}
+
+.photo
+{
+	float: right;
+	border: 2px ;
+	width: 170px;
+	height: 170px;
+	margin-right: 10px;
+
+}
+
+.section
+{
+	width: 750px;
+	height: 230px;
+	border: 2px solid pink;
+	padding: 4px;
+	margin-top: 6px;
+	border-radius: 4px;
+}
+
+
+.description
+{
+	float: right;
+	border: 2px ;
+	width: 520px;
+	height: 150px;
+	border-radius: 5px;
+}
+
+span.gras
+{
+	font-weight: bold;
+
+}
