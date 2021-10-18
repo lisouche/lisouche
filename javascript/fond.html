@@ -2,23 +2,23 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Fond/ valeur non comprise si erreur</title>
 </head>
 <body>
 <script type="text/javascript">
-	var couleur =prompt ("Ecrire une couleur");
+	var couleur =prompt ("Ecrire une couleur (bleu,vert,rouge)");
 
 	if 
-	(couleur ==="rouge" || couleur ==="ROUGE")
+		(couleur ==="rouge" || couleur ==="ROUGE")
 		document.bgColor ="red";
 	else if
-(couleur ==="bleu" ||couleur ==="BLEU")
+		(couleur ==="bleu" ||couleur ==="BLEU")
 		document.bgColor ="blue";
 	else if 
 		(couleur ==="vert"|| couleur ==="VERT")
 		document.bgColor ="green";
-else
-	document.write("valeur non comprise")
+	else
+		document.write("valeur non comprise")
 
 
 
