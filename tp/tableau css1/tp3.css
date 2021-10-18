@@ -1,0 +1,30 @@
+table
+{border: 3px solid blue;
+width: 60%;
+background-color: lightblue;
+margin: auto;
+}
+
+th 
+{
+font-family: arial;
+font-size: 1.20em;
+text-align: center;
+border: 1px solid black;
+background-image: url('fondtable.jpg');
+
+}
+
+
+td
+{
+font-family: arial;
+font-size: 0.80em;
+text-align: center;
+border: 1px solid black;
+}
+
+a 
+{text-align: center;}
+
+

@@ -1,0 +1,68 @@
+body
+{background-color: #FFCCCC;}
+
+table
+{
+border: 3px solid #D5AAE2;
+margin: auto;
+padding: auto;
+text-align: center;
+font-family: serif;
+
+font-size: 1em;
+}
+
+
+th
+{font-family: serif;
+font-size: 1.5em;
+background-color: #AAE2BA;
+padding: 1em;
+margin: auto;
+
+}
+
+
+td 
+{
+font-size: 1em;
+padding: 2em;
+}
+
+
+.p1
+{
+font-size: 2em;
+font-display: auto;
+font-family:Helvetica ;
+background-image: url('ga.png');
+background-size: 100% 100%;
+color: black;
+
+}
+
+
+.p2
+{
+font-size: 1.8em;
+font-family: Helvetica;
+background-image: url('draco.jpg');
+background-size: 100% 100%;
+color: #1A6255;
+
+
+}
+
+
+.p3
+{font-size: 1.8em;
+font-family: Helvetica;
+background-size: 100% 100% ;
+background-image: url('lu.jpg');
+color: black;
+
+
+}
+
+
+
