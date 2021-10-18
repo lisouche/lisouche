@@ -1,0 +1,22 @@
+p1
+{ color: red; 
+font-size: 1.3em;}
+
+p2 
+{color: blue;
+font-size: 1.3em;}
+
+
+.a
+{
+	
+
+	background-color: lightblue;
+	border-radius: 3px;
+	border: 3px solid black;
+	width: 20%;
+	height: 20%;
+	padding: 32px;
+	margin: auto;
+
+}
