@@ -1,0 +1,201 @@
+body
+{
+	background-color: #F1DCF4;
+}
+
+
+header 
+{
+	background: #CFA2E5;
+	color: white;
+	font-size: 1.7rem;
+	font-family: verdana;
+	display: block; /* faire toute la largueur */
+	margin: 12px 1.5% 24px 1.5%; 
+	text-align: center;
+	border-radius: 7px;
+	margin: 8px;
+
+}
+
+footer
+{
+	background: #CFA2E5;
+	color: white;
+	font-size: 1.2rem;
+	font-family: verdana;
+	display: block; /* faire toute la largueur */
+	text-align: center;
+	border-radius: 7px;
+/*haut droite bas gauche*/
+	margin: 8px;
+	clear: both;
+
+} 
+
+div.pages
+{
+	border: 3px solid plum;
+	border-radius: 8px;
+	font-family: arial;
+	text-align: justify;
+	/*margin: 8px;
+	height: 500px;*/
+	height: 700px;
+	width: 100%;
+
+}
+
+
+/* Principal */
+div
+{
+	overflow: hidden;
+	text-align: center;	
+	width: 100%;
+	margin: auto;
+}
+
+/* Menu */
+.menu
+{
+	width: 20%; 
+	height: 620px;
+	float: left; 
+	background-color: #F1DCF4;
+	border-radius: 8px;
+	margin-bottom: 8px;
+
+}
+
+/* Menu boutons */
+.button
+{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: default;
+}
+
+.button1 
+{
+	background-color: RGB(220, 178, 231); 
+	color: white;
+	border-radius: 4px;
+}
+
+.button2 
+{
+	background-color:RGB(220, 178, 231); 
+	color: white;
+	padding: 8px 64px;
+	border-bottom: 1px solid white;
+}
+
+.button1:hover 
+{
+	background-color: #BE88CC;
+	color: white;
+	cursor: pointer;
+}
+
+.button2:hover 
+{
+	background-color:#BE88CC;
+	color: white;
+	cursor: pointer;
+}
+
+ul
+{
+	list-style: none;
+	text-align: center;
+	margin-right: 6em;
+}
+
+nav > ul > li
+{
+	text-align: center;
+	margin-top: 14px;
+	border-radius: 4px;
+}
+
+/* Sous-menus */
+.submenu ul > li a 
+{
+	padding: 15px 32px;	
+	font-size: 13px;
+	color: #FFF;
+	position: absolute;
+}
+
+.submenu
+{
+	display: none;
+	left: 15em;
+	margin-top: 12px;
+}
+
+nav ul > li:hover .submenu 
+{
+	display: inline-block;
+	position: absolute;
+}
+
+nav > ul > li::after
+{ 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+/* Contenu */
+.content
+{
+	margin-left: 12px;
+	width: 78%;
+	height: 620px;
+	float: left;
+	border-radius: 8px;
+}
+
+/*IFRAME*/
+iframe
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-style: none;
+	margin-left: 14px;
+	border-radius: 8px;
+}
+
+body.iframe
+{
+	background-color:#F5F8DE;
+}
+
+img
+{
+	float: right;
+	padding: 19px; /*interieur*/
+}
+
+span
+{
+	font-weight: bold;
+}
+
+p
+{
+	font-size: 15px;
+	padding-left: 7px;
+}
