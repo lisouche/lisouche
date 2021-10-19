@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>somme v2 /tp3</title>
+	
+	<script type="text/javascript">
+	function calculate() {
+		var x=parseInt(document.getElementById("first").value);
+		var y=parseInt(document.getElementById("second").value);
+		document.getElementById("answer").value=(x+y);
+	}
+
+	</script>
+</head>
+
+<body>
+
+<form>
+	frist:<input type="text" name="first" id="first"><br>
+	second:<input type="text" name="second" id="second"><br>
+	answer:<input type="text" name="answer" id="answer"><br>
+	<input onclick="calculate()" type="button" value="addition">
+
+</form>
+
+
+</body>
+</html>
