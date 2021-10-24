@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Facture css html js</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	
+</head>
+<body>
+<div class="page">
+
+<!-- 1er -->
+	<div class="entete1">
+		<div class="gauche1">
+			<img src="logo.jpg" width="150" height="150"> 
+			<h4> Nom de la compagnie</h4> <br>
+			<p>Adresse postale</p><br>
+			<p>Détail du contact</p>
+		</div>
+
+		<div class="droite1">
+			
+			<table class="table1">
+				<tr><td width="160px"><span class="facture">FACTURE</span></td> </tr>
+				<tr><td class="trait"><script type="text/javascript" src="java.js"></script></td></tr>
+				<tr><td class="trait">N° de facture</td></tr>
+			</table>
+		</div>
+
+	</div>
+
+
+
+<!-- 2eme -->	
+<span class="condition"> Conditions de paiement, par exemple: dû dans X jours</span>
+	<div class="entete2">
+			
+		<table class="table2">
+			<tr>
+				<td class="table">Destinataire</td>
+				<td width="40px"></td>
+				<td class="table">Envoyez à</td>
+			</tr>
+			<tr>
+				<td>Nom</td>
+				<td></td>
+				<td>Nom</td>
+			</tr>
+			<tr>
+				<td>Nom de la société</td>
+				<td></td>
+				<td>Nom de la société</td>
+			</tr>
+			<tr>
+				<td>Adresse postale</td>
+				<td></td>
+				<td>Adresse postale</td>
+			</tr>
+			<tr>
+				<td>Téléphone</td>
+				<td></td>
+				<td>Téléphone</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td></td>
+				<td>Email</td>
+			</tr>
+		</table>
+	</div>
+
+		<!-- 3eme -->
+	<div class="entete3">
+
+	<table class="table3" id="table3" width="100%">
+		<tr class="couleur">
+			<th width="600px" >DESCRIPTION</th>
+			<th width="140px">QUANTITÉ</th>
+			<th width="140px">PRIX UNITAIRE</th>
+			<th width="80px">TOTAL</th>
+		</tr>
+		<tr class="gris">
+			<td><input type="text" name="desc" id="d1" class="input"></td>
+			<td><input type="text" name="qte" id="q1" class="input"></td>
+			<td><input type="text" name="prix" id="p1" class="input"></td>
+			<td><input type="text" name="total" id="t1" value="0.00"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="desc" id="d2" class="input"></td>
+			<td><input type="text" name="qte" id="q2" class="input"></td>
+			<td><input type="text" name="prix" id="p2" class="input"></td>
+			<td><input type="text" name="total" id="t2" value="0.00"></td>
+		</tr>
+		<tr class="gris">
+			<td><input type="text" name="desc" id="d3" class="input"></td>
+			<td><input type="text" name="qte" id="q3" class="input"></td>
+			<td><input type="text" name="prix" id="p3" class="input"></td>
+			<td><input type="text" name="total" id="t3" value="0.00"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="desc" id="d4" class="input"></td>
+			<td><input type="text" name="qte" id="q4" class="input"></td>
+			<td><input type="text" name="prix" id="p4" class="input"></td>
+			<td><input type="text" name="total" id="t4" value="0.00"></td>
+		</tr>
+		<tr class="gris">
+			<td><input type="text" name="desc" id="d5" class="input"></td>
+			<td><input type="text" name="qte" id="q5" class="input"></td>
+			<td><input type="text" name="prix" id="p5" class="input"></td>
+			<td><input type="text" name="total" id="t5" value="0.00"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="desc" id="d6" class="input"></td>
+			<td><input type="text" name="qte" id="q6" class="input"></td>
+			<td><input type="text" name="prix" id="p6" class="input"></td>
+			<td><input type="text" name="total" id="t6" value="0.00"></td>
+		</tr>
+		<tr class="gris">
+			<td><input type="text" name="desc" id="d7" class="input"></td>
+			<td><input type="text" name="qte" id="q7" class="input"></td>
+			<td><input type="text" name="prix" id="p7" class="input"></td>
+			<td><input type="text" name="total" id="t7" value="0.00"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="desc" id="d8" class="input"></td>
+			<td><input type="text" name="qte" id="q8" class="input"></td>
+			<td><input type="text" name="prix" id="p8" class="input"></td>
+			<td><input type="text" name="total" id="t8" value="0.00"></td>
+		</tr>
+		<tr class="gris">
+			<td><input type="text" name="desc" id="d9" class="input"></td>
+			<td><input type="text" name="qte" id="q9" class="input"></td>
+			<td><input type="text" name="prix" id="p9" class="input"></td>
+			<td><input type="text" name="total" id="t9" value="0.00"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="desc" id="d10" class="input"></td>
+			<td><input type="text" name="qte" id="q10" class="input"></td>
+			<td><input type="text" name="prix" id="p10" class="input"></td>
+			<td><input type="text" name="total" id="t10" value="0.00"></td>
+		</tr>
+	</table>
+
+<!-- calcul -->
+	<table class="calcul_table" width="100%"  style=" margin: 0 auto;">
+		<tr class="calcul" style="border-style: none;">
+			<td style="text-align: left;">Remarques, notes et instructions de paiement</td>
+			<td></td>
+			<td width="50%">SOUS-TOTAL</td>
+			<td width="80px"><input type="text" name="sous-total" id="st1" class="input" value="0.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>REMISE</td>
+			<td><input type="text" name="remise" id="r1" class="input" value="0.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>SOUS-TOTAL MOINS LES REMISES</td>
+			<td><input type="text" name="st_remise" id="str1" value="0.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>TAUX D'IMPOSITION</td>
+			<td><input type="text" name="taux_impot" id="ti1" class="input" value="0.00%"></td> 
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>TAXE TOTALE</td>
+			<td><input type="text" name="taxe_total" id="tt1" value="0.00"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>EXPEDITO, MANUTENTION</td>
+			<td ><input type="text" name="exp_man" id="em1" class="input" value="0.00"></td>
+		</tr>
+	</table>
+<!-- couleur -->
+	<table width="100%">
+		<tr>
+			<td></td>
+			<td width="140px"></td>
+			<td width="260px" style="border-top: 1px solid black; font-size: 16px;">SOLDE DU</td>
+			<td style="background-color:lightpink; border-top: 1px solid black; " width="80px"><input type="text" name="solde" id="solde" value="0.00€"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="background-color: lightpink; border-top: 1px solid black">‎</td>
+		</tr>
+	</table>		
+
+	<input type="button" value="Calculer" onclick="calculate()">
+</div>
+
+
+
+</body>
+</html>
