@@ -14,9 +14,9 @@
 	<div class="entete1">
 		<div class="gauche1">
 			<img src="logo.jpg" width="150" height="150"> 
-			<h4> Nom de la compagnie</h4> <br>
-			<p>Adresse postale</p><br>
-			<p>Détail du contact</p>
+			<h4><input class="rien" type="text" placeholder="Nom de la compagnie"></h4> <br>
+			<p><input class="rien" type="text" placeholder="Adresse postale"></p><br>
+			<p><input class="rien" type="text" placeholder="Détail du contact"></p>
 		</div>
 
 		<div class="droite1">
@@ -24,7 +24,7 @@
 			<table class="table1">
 				<tr><td width="160px"><span class="facture">FACTURE</span></td> </tr>
 				<tr><td class="trait"><script type="text/javascript" src="java.js"></script></td></tr>
-				<tr><td class="trait">N° de facture</td></tr>
+				<tr><td class="trait"><input  class="rien" type="text" placeholder="N° de facture"></td></tr>
 			</table>
 		</div>
 
@@ -43,29 +43,29 @@
 				<td class="table">Envoyez à</td>
 			</tr>
 			<tr>
-				<td>Nom</td>
+				<td><input  class="rien" type="text" placeholder="Nom"></td>
 				<td></td>
-				<td>Nom</td>
+				<td><input  class="rien" type="text" placeholder="Nom"></td>
 			</tr>
 			<tr>
-				<td>Nom de la société</td>
+				<td><input class="rien" type="text" placeholder="Nom de la société"></td>
 				<td></td>
-				<td>Nom de la société</td>
+				<td><input class="rien" type="text" placeholder="Nom de la sociéte"></td>
 			</tr>
 			<tr>
-				<td>Adresse postale</td>
+				<td><input class="rien" type="text" placeholder="Adresse postale"></td>
 				<td></td>
-				<td>Adresse postale</td>
+				<td><input class="rien" type="text" placeholder="Adresse postale"></td>
 			</tr>
 			<tr>
-				<td>Téléphone</td>
+				<td><input class="rien" type="text" placeholder="Téléphone"></td>
 				<td></td>
-				<td>Téléphone</td>
+				<td><input class="rien" type="text" placeholder="Téléphone"></td>
 			</tr>
 			<tr>
-				<td>Email</td>
+				<td><input class="rien" type="text" placeholder="Email"></td>
 				<td></td>
-				<td>Email</td>
+				<td><input class="rien" type="text" placeholder="Email"></td>
 			</tr>
 		</table>
 	</div>
@@ -143,41 +143,41 @@
 	</table>
 
 <!-- calcul -->
-	<table class="calcul_table" width="100%"  style=" margin: 0 auto;">
-		<tr class="calcul" style="border-style: none;">
-			<td style="text-align: left;">Remarques, notes et instructions de paiement</td>
+	<table class="table4">
+		<tr style="border-style: none;">
+			<td style="text-align: left;"><input class="rien" type="text" placeholder="Remarques, notes et instructions de paiement:"></td>
 			<td></td>
-			<td width="50%">SOUS-TOTAL</td>
+			<td width="50%" style="font-size: 12px;">SOUS-TOTAL</td>
 			<td width="80px"><input type="text" name="sous-total" id="st1" class="input" value="0.00"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>REMISE</td>
+			<td style="font-size: 12px;">REMISE</td>
 			<td><input type="text" name="remise" id="r1" class="input" value="0.00"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>SOUS-TOTAL MOINS LES REMISES</td>
+			<td style="font-size: 12px;">SOUS-TOTAL MOINS LES REMISES</td>
 			<td><input type="text" name="st_remise" id="str1" value="0.00"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>TAUX D'IMPOSITION</td>
+			<td style="font-size: 12px;">TAUX D'IMPOSITION</td>
 			<td><input type="text" name="taux_impot" id="ti1" class="input" value="0.00%"></td> 
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>TAXE TOTALE</td>
+			<td style="font-size: 12px;">TAXE TOTALE</td>
 			<td><input type="text" name="taxe_total" id="tt1" value="0.00"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>EXPEDITO, MANUTENTION</td>
+			<td style="font-size: 12px;">EXPEDITO, MANUTENTION</td>
 			<td ><input type="text" name="exp_man" id="em1" class="input" value="0.00"></td>
 		</tr>
 	</table>
@@ -186,18 +186,19 @@
 		<tr>
 			<td></td>
 			<td width="140px"></td>
-			<td width="260px" style="border-top: 1px solid black; font-size: 16px;">SOLDE DU</td>
-			<td style="background-color:lightpink; border-top: 1px solid black; " width="80px"><input type="text" name="solde" id="solde" value="0.00€"></td>
+			<td class="soldedu" >SOLDE DU</td>
+			<td class="solde"><input style="font-weight: bold; font-size: 15px;" type="text" name="solde" id="solde" value="0.00€"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td style="background-color: lightpink; border-top: 1px solid black">‎</td>
+			<td class="solde"></td>
 		</tr>
 	</table>		
 
 	<input type="button" value="Calculer" onclick="calculate()">
+	<input type="button" value="Code" onclick="access()">
 </div>
 
 
