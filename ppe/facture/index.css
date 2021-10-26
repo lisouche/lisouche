@@ -157,3 +157,6 @@ input.rien{
 	width: 200px;
 	border-top: 1px solid black;
 }
+.trait{
+	border-bottom: 1px solid black;
+}
