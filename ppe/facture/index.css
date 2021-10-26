@@ -110,6 +110,12 @@ margin: auto;
 	border: 1px solid gray;
 }
 
+.table4{
+	width: 100%;
+	margin: auto;
+	text-align: right;
+}
+
 .entete3 tr td input{
 	text-align: right;
 }
@@ -127,12 +133,26 @@ table td input{
 	width: 100%;
 }
 
-input{
+input.rien{
 	
 	float: right;
+	border-style: none;
+	background-color: transparent;
 }
 
 
 .gris{
 	background-color:#ECECEC;
+}
+
+.solde{
+	background-color: lightpink;
+	border-top: 1px solid black;
+	width: 80px;
+	
+}
+.soldedu{
+	font-size: 16px; 
+	width: 260px;
+	border-top: 1px solid black;
 }
