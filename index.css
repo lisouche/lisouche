@@ -47,27 +47,9 @@ nav > ul > li > a /*modifier leurs tailles*/
     color: darkred;
 }
 
-.site:hover 
+.menu:hover 
 {
     border-top: 5px solid #B0E0E6;
-    background-color: rgba(199, 21, 133,0.18);
-}
-
-.tp:hover
-{
-    border-top: 5px solid   #B0E0E6;
-    background-color: rgba(199, 21, 133,0.15);
-}
-
-.mission:hover
-{
-    border-top: 5px solid   #B0E0E6;
-    background-color: rgba(199, 21, 133,0.18);
-}
-
-.js:hover
-{
-    border-top: 5px solid   #B0E0E6;
     background-color: rgba(199, 21, 133,0.18);
 }
 
@@ -114,25 +96,11 @@ nav li:hover .submenu /*quand on passe dessus*/
     width: 270px;
 }
 
-.site .submenu /*mettre une couleur de fond au SO*/
+.menu .submenu /*mettre une couleur de fond au SO*/
 {
     background-color: rgba(176, 224, 230, 0.8);
 }
 
-.tp .submenu
-{
-    background-color: rgba(176, 224, 230, 0.8);
-}
-
-.mission .submenu
-{
-    background-color: rgba(176, 224, 230, 0.8);
-}
-
-.js .submenu
-{
-    background-color: rgba(176, 224, 230, 0.8);
-}
 
 .submenu li:hover a /*ecriture quand on passe dessus*/
 {
@@ -140,25 +108,11 @@ nav li:hover .submenu /*quand on passe dessus*/
     font-weight: bold;
 }
 
-.site .submenu li:hover /*couleur de fond quand on passe dessus*/
+.menu .submenu li:hover /*couleur de fond quand on passe dessus*/
 {
     background-color:rgb(135, 206, 250);
 }
 
-.tp .submenu li:hover
-{
-    background-color:rgb(135, 206, 250);
-}
-
-.mission .submenu li:hover
-{
-    background-color:rgb(135, 206, 250);
-}
-
-.js .submenu li:hover
-{
-    background-color:rgb(135, 206, 250);
-}
 
 
 /*MOBILE*/
@@ -209,4 +163,3 @@ nav input[type=checkbox]:checked ~ ul
         position: static;}
     
 }
-
