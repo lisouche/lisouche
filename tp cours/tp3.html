@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>compte bloqué si 3 erreurs</title>
+	<script type="text/javascript">
+		function access_while(){
+			var i=0;
+
+	do{
+		i=i+1;
+		var username= prompt("identifiant : ");
+		var mdp=prompt("mot de passe : ");
+		if (username === "Admin_GSB" && mdp === "admin")
+		{document.write("connexion réussite");}
+
+	else
+	{alert("identifiant ou mot de passe incorrects")}
+	}
+		
+	while (i<3);
+	if (i==3)
+		alert("Compte bloqué");
+		}
+	</script>
+</head>
+<body>
+	<input type="button" onclick="access_while()" value="Se connecter">
+</body>
+</html>
