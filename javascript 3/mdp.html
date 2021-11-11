@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function access(){
+			var username= prompt("identifiant : ");
+			var mdp=prompt("mot de passe : ");
+
+			if (username === "Admin_GSB" && mdp === "admin")
+				{document.write("connexion réussite");}
+
+			else 
+			{document.write("erreur connexion");}
+		}
+	</script>
+</head>
+<body>
+		<input type="button" name="c" onclick="access()" value="Se connecter">
+</body>
+</html>
