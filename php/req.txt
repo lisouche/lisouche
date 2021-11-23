@@ -1,0 +1,117 @@
+req pour cree une table:
+CREATE TABLE reparation
+( num_reparation INT PRIMARY KEY NOT NULL,
+date_reparation VARCHAR (100),
+duree_reparation VARCHAR (100),
+cout_reparation VARCHAR (100),
+responsable_rep VARCHAR (100),
+immatriculation VARCHAR (100) )
+
+req 1: afficher tous les véhicules présents dans la base de données
+select *
+from `voitures`
+
+req 2: afficher tous les véhicules par ordre de l'immatriculation
+select *
+from `voitures`
+order by `immatriculation`
+
+req 3: afficher les vehicules classés par marque et modele
+SELECT * 
+FROM `voitures`
+order by `marque`,`modele`
+
+req 4: afficher toutes les informations sur les vehicules de marque tesla
+SELECT *
+FROM `voitures`
+WHERE `marque` = "tesla"
+
+req 5: afficher en minuscule la marque et le modele de toutes les voitures tesla
+SELECT LOWER( `marque` ) , LOWER( `modele` )
+FROM `voitures`
+WHERE `marque` = "tesla"
+
+req 6: afficher en majuscule la marque et le modele de toutes les voitures tesla
+SELECT upper( `marque` ) , upper( `modele` )
+FROM `voitures`
+WHERE `marque` = "tesla"
+
+req 7: cree une requete qui permet d'ajouter une colonne prix_achat dans la table "voiture"
+ALTER TABLE voitures
+ADD prix_achat INT
+
+req 8: afficher toutes les voitures ayant un prix d'achat comrpis entre 15000 et 20000 euros
+SELECT *
+FROM `voitures`
+WHERE `prix_achat` <20000
+AND `prix_achat` >15000
+				ou bien
+SELECT *
+FROM `voitures`
+WHERE `prix_achat`
+BETWEEN 15000
+AND 20000
+
+req 9: afficher le kilometrage moyen de toutes les voitures mercedes
+SELECT AVG( kilometrage )
+FROM `voitures`
+WHERE `marque` = "mercedes"
+
+req 10: afficher le nombres de voitures de marque tesla
+SELECT COUNT( * )
+FROM `voitures`
+WHERE `marque` = "tesla"
+
+req 11: afficher le nombres de voitures de couleur noire
+SELECT COUNT( * )
+FROM `voitures`
+WHERE `couleur` = "noire"
+
+req 12: afficher le nombre de voitures groupé par marque
+SELECT `marque` , COUNT( * )
+FROM `voitures`
+GROUP BY `marque`
+
+req 13: afficher le max de tous les kilometrages
+SELECT MAX( `kilometrage` )
+FROM `voitures`
+
+req 14: afficher la marque, le modele et l'immatriculation du vehicule ayant le plus de kilometrage
+SELECT `marque` , `modele` , `immatriculation`
+FROM `voitures`
+WHERE `kilometrage` = (
+SELECT MAX( `kilometrage` )
+FROM `voitures` )
+
+req 15: afficher la marque, le modele et l'immatriculation du vehicule ayant le moins de kilometrage
+SELECT `immatriculation` , `marque` , `modele`
+FROM `voitures`
+WHERE `kilometrage` = (
+SELECT MIN( `kilometrage` )
+FROM `voitures` )
+
+req 16: afficher la liste des clients qui habitent a paris ou nice
+SELECT *
+FROM `clients`
+WHERE `ville` = "paris" OR `ville`="nice"	ou bien		WHERE `ville` = "paris" OR "nice"
+
+req 17: afficher la somme des prix d'achats des voitures mercedes
+SELECT SUM( `prix_achat` )
+FROM `voitures`
+WHERE `marque` = "mercedes"
+
+req 18: afficher les indentifiants et les villes des clients ayant un nom qui commence par A
+SELECT `code_client` , `ville`
+FROM `clients`
+WHERE nom LIKE "r%"
+
+req 19: cree une requete permettant d'ajouter 3 voitures de votre choix
+INSERT INTO voitures (immatriculation,marque,modele,kilometrage,carburant,couleur,nbr_place,nbr_porte,prix_achat) VALUES
+('66 TU 6666','toyota','camry','2000','essence','gris','5','5','30000'),
+('88 TO 8000','porche','cayenne','4000','essence','rouge','4','5','50000'),
+('99 XY 9999','mercedes','classe A','3000','essence','blanc','5','5','68000')
+
+req 20: creer une requete permettant d'ajouter deux locations de votre choix
+INSERT INTO locations (id_location,duree_location,date_location,prix_location,code_client,immatriculation) VALUES
+('LOC344','7','2021-11-08','79','t300','33 TU 3000'),
+('LOC884','4','2021-11-06','59','t600','66 TU 6000')
