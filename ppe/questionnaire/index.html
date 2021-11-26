@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>questionnaire</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+<form>
+<p>
+<h3>Quizz informatique</h3>
+
+<strong>Question 1:</strong>
+<p class="q1">Quel est le langage informatique le plus courant utilisé pour écrire les pages web ?</p>
+	<input type="checkbox" class="choix" id="q1_r1" name="q1r"> b) HTTP (Hypertext Transfer Protocol)<br>
+	<input type="checkbox" class="choix answer" id="q1_r2" name="q1r"> a) HTML (Hypertext Markup Language)<br>
+	<input type="checkbox" class="choix" id="q1_r3" name="q1r">  c) Java<br>
+<br>
+
+<strong>Question 2:</strong>
+<p>À quoi est égal 1 octet ?</p>
+	<input type="checkbox" class="choix" id="q2_r1" name="q2r"> a) À 8 bytes<br>
+	<input type="checkbox" class="choix" id="q2_r2" name="q2r"> b) 4 bits<br>
+	<input type="checkbox" class="choix answer" id="q2_r3" name="q2r"> c) À 8 bits<br>
+<br>
+
+<strong>Question 3:</strong>
+<p>Combien vaut 1 Mo (mégaoctet) ?</p>
+	<input type="checkbox" class="choix answer" id="q3_r1" name="q3r"> a) 1 million d’octets<br>
+	<input type="checkbox" class="choix" id="q3_r2" name="q3r"> b) 1000 octets<br>
+	<input type="checkbox" class="choix" id="q3_r3" name="q3r"> c) 1024 octets<br>	
+<br>
+
+<strong>Question 4:</strong>
+<p>Qu’est-ce qu’une adresse IP ?</p>
+	<input type="checkbox" class="choix" id="q4_r1" name="q4r"> b) Le protocole de communication utilisé sur Internet<br>
+	<input type="checkbox" class="choix answer" id="q4_r2" name="q4r"> a) Un numéro qui identifie chaque matériel informatique (ordinateur, routeur, imprimante) connecté à un réseau informatique<br>
+	<input type="checkbox" class="choix" id="q4_r3" name="q4r"> c) L’adresse d’un site web, commençant par "http://"<br>
+<br><br>
+
+<input type="button" id="correction" value="Score" onclick="valider()">
+<input type="reset" name="effacer" value="recommencer">
+<input type="button" name="corriger" value="Corrigé" onclick="location.href='corrigé.html'">
+</p><br>
+
+</form>
+</body>
+</html>
