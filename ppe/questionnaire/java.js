@@ -3,7 +3,7 @@ function valider() {
         const answers = document.querySelectorAll('.answer');
         var results = new Array();
 
-        for (let i = 0; i <= 3; i++) {
+        for (let i = 0; i <= 9; i++) {
                 if (answers[i].checked) {
                         newResults = results.push(1);
                 } else {
@@ -30,6 +30,12 @@ function valider() {
         "1": "À quoi est égal 1 octet ?",
         "2": "Combien vaut 1 Mo (mégaoctet) ?",
         "3": "Qu’est-ce qu’une adresse IP ?",
+        "4":"Que veut dire FTP ?",
+        "5":"Comment s’appelle un logiciel malveillant installé dans un ordinateur dans le but de collecter et transférer des informations sans que l’utilisateur en ait connaissance ?",
+        "6":"Qu’est-ce qu’un CPU ?",
+        "7":"Comment appelle-t-on les connecteurs utilisés pour brancher les câbles d’un réseau informatique ?",
+        "8":"Comment appelle-t-on l´écran de l’ordinateur ?",
+        "9":"Comment appelle-t-on un logiciel dont l’utilisateur doit rétribuer l’auteur s’il veut continuer à l’utiliser après une période de gratuité ?",
     };
     document.write(`<link rel="stylesheet" type="text/css" href="index.css">`);
         document.write(`Correction<br><br>`);
