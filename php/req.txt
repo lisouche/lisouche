@@ -1,11 +1,7 @@
 req pour cree une table:
 CREATE TABLE reparation
-( num_reparation INT PRIMARY KEY NOT NULL,
-date_reparation VARCHAR (100),
-duree_reparation VARCHAR (100),
-cout_reparation VARCHAR (100),
-responsable_rep VARCHAR (100),
-immatriculation VARCHAR (100) )
+( num_reparation INT PRIMARY KEY NOT NULL?
+date_reparation VARCHAR (100)
 
 req 1: afficher tous les véhicules présents dans la base de données
 select *
