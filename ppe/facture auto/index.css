@@ -1,0 +1,164 @@
+.page{
+height: 2000px;
+margin: auto;
+width: 60%;
+background-color:white;
+}
+
+
+
+/*entete1*/
+.entete1
+{border: 2px solid black;
+border-top: 10px solid orangered;
+background-color: #ECECEC;
+border-bottom:1px solid lightgray ;
+height: 200px;
+padding: 4px;
+
+}
+
+.gauche1{
+    float: left;
+} 
+
+img{
+    margin: 14px;
+    border-radius: 75px;
+    float: left;
+}
+
+h4{
+    float: left;
+    margin-bottom: -15px;
+}
+
+p{
+    margin-bottom: 1px;
+    float: left;
+}
+
+.droite1{
+    float: right;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+span.facture 
+{
+    font-weight: bold;
+    font-size: 24px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+td.trait  {
+    border-bottom: 1px solid #A6A6A6;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.table1{
+    padding: 6px;
+    margin-bottom: 1px;
+}
+
+/*entete 2*/
+.entete2{
+    background: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    height: 200px;
+    padding: 1em;
+}
+
+span.condition{
+    float:right;
+    font-size: 15px;
+    margin-right: 16px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-style: italic;
+
+}
+
+.table2{
+width: 96%;
+margin: auto;
+}
+
+.table{
+    border-bottom: 1px solid blue;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*enetete3*/
+.entete3{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 10px solid orangered;
+    height: 470px;
+    text-align: right;
+    padding: 1em; 
+}
+
+.table3{    
+    width: 100%;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.table4{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+.entete3 tr td input{
+    text-align: right;
+}
+
+.couleur{
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 1em;
+}
+
+table td input{
+    background-color: transparent;
+    border-style: none;
+    width: 100%;
+}
+
+input.rien{
+    
+    float: right;
+    border-style: none;
+    background-color: transparent;
+}
+
+
+.gris{
+    background-color:#ECECEC;
+}
+
+.solde{
+    background-color: lightpink;
+    border-top: 1px solid black;
+    width: 110px;
+    height: 10px;
+
+    
+}
+.soldedu{
+    font-size: 16px; 
+    width: 200px;
+    border-top: 1px solid black;
+}
+
+.trait{
+    border-bottom: 1px solid black;
+}
